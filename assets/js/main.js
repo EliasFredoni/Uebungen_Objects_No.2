@@ -13,6 +13,8 @@ let edelMetallPreise = [
     { name: "Osmium", preiseGramEuro: 11.54, veraenderung: "0.00%" }
 ];
 
+console.log(edelMetallPreise);
+
 edelMetallPreise.forEach((alle) => {
     console.log(alle.name);
 })
@@ -21,10 +23,11 @@ let newArray = [];
 edelMetallPreise.forEach((neu) => {
     newArray.push(neu.name);
 });
+
 console.log(newArray);
 
 let newArray2 = [];
-veraenderung.forEach((neu2) => {
+edelMetallPreise.forEach((neu2) => {
     newArray2.push(neu2.veraenderung);
 });
 console.log(newArray2);
@@ -36,7 +39,9 @@ edelMetallPreise.map((alle1) => {
 })
 
 edelMetallPreise.filter((alle3) => {
-    console.log(alle3.preiseGramEuro < 50);
+    if (alle3.preiseGramEuro < 50) {
+        console.log(alle3.preiseGramEuro);
+    }
 })
 
 /*********LEV 2.2***********/
