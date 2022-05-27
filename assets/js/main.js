@@ -15,9 +15,19 @@ let edelMetallPreise = [
 
 edelMetallPreise.forEach((alle) => {
     console.log(alle.name);
-    //console.log(alle.preiseGramEuro.push());
-    //consoel.log(alle.veraenderung.push());
 })
+
+let newArray = [];
+edelMetallPreise.forEach((neu) => {
+    newArray.push(neu.name);
+});
+console.log(newArray);
+
+let newArray2 = [];
+veraenderung.forEach((neu2) => {
+    newArray2.push(neu2.veraenderung);
+});
+console.log(newArray2);
 
 edelMetallPreise.map((alle1) => {
     console.log(alle1.name);
@@ -45,3 +55,4 @@ const singers = [
 singers.sort((alle) => {
     console.log(alle.name);
 })
+
